@@ -19,5 +19,5 @@ AWS Sagemakerの使用例とできること、工夫すべき点を示します
 EC2インスタンス等を立てることなく、JupyterNotebookやTensorFlowやSpark等を扱うことができます。  
 
 <div align="center">
-  <img width="450px" src="https://user-images.githubusercontent.com/4949982/39577840-61befd4a-4f1d-11e8-8afd-586eea29bdae.png">
+  <img width="550px" src="https://user-images.githubusercontent.com/4949982/39577840-61befd4a-4f1d-11e8-8afd-586eea29bdae.png">
 </div>
