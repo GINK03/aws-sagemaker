@@ -37,3 +37,12 @@ EC2インスタンス等を立てることなく、JupyterNotebookやTensorFlow�
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/39578380-f89462e0-4f1e-11e8-8e8f-aa163ec682c3.png">
 </div>
 <div align="center"> 図4. 対応しているカーネルはSpark各種と、mxnet, tensorflow, anaconda </div>
+
+## SageMakerのOSとusernameとpermission
+JupyterNotebookなので、terminalが使えます。  
+
+Linuxの種類とversionは2018/5時点でこのようになっています。
+```console
+Amazon Linux AMI release 2017.09
+sh-4.2$
+```
