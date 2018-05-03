@@ -21,10 +21,12 @@ EC2インスタンス等を立てることなく、JupyterNotebookやTensorFlow�
 <div align="center">
   <img width="550px" src="https://user-images.githubusercontent.com/4949982/39577840-61befd4a-4f1d-11e8-8afd-586eea29bdae.png">
 </div>
+<div align="center"> 図1. SageMakerのサービスに入る </div>
 
 <div align="center">
   <img width="550px" src="https://user-images.githubusercontent.com/4949982/39578205-84670850-4f1e-11e8-9d51-a8ef71124437.png">
 </div>
+<div align="center"> 図2. JupyterNotebookのインスタンス作成＆起動 </div>
 
 <div align="center">
   <img width="550px" src="https://user-images.githubusercontent.com/4949982/39578315-cc096ad6-4f1e-11e8-9574-2d5ec8bc7e82.png">
