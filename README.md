@@ -43,6 +43,6 @@ JupyterNotebookなので、terminalが使えます。
 
 Linuxの種類とversionは2018/5時点でこのようになっています。
 ```console
+sh-4.2$ 
 Amazon Linux AMI release 2017.09
-sh-4.2$
 ```
