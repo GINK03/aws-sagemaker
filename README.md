@@ -43,6 +43,12 @@ JupyterNotebookなので、terminalが使えます。
 
 Linuxの種類とversionは2018/5時点でこのようになっています。
 ```console
-sh-4.2$ 
+sh-4.2$ less /etc/system-release
 Amazon Linux AMI release 2017.09
+```
+
+usernameは以下の通りでsudoする権限が与えられています  
+```console
+sh-4.2$ whoami
+ec2-user
 ```
