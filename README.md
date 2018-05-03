@@ -5,7 +5,9 @@ AWS Sagemakerの使用例とできること、工夫すべき点を示します
 ## 目次
 - AWS sagemakerとは
   - Amazon Linux
-- Jupyterを使う
+- anacondaにモジュールを追加する　
+- SageMakerのOSとusernameとpermission
+
 - インスタンスのスケール調整
 - ディスクの制限をS3で回避する
 - ディスクの制限をEFSで回避する
