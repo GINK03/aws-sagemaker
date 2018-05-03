@@ -38,6 +38,16 @@ EC2インスタンス等を立てることなく、JupyterNotebookやTensorFlow�
 </div>
 <div align="center"> 図4. 対応しているカーネルはSpark各種と、mxnet, tensorflow, anaconda </div>
 
+## anacondaにモジュールを追加する  
+Jupyterはユーザ権限で動作しているので、Jupyterの中から直接、モジュールをインストールできます  
+```jupyter
+%%sh 
+conda install -c conda-forge lightgbm
+```
+```jupyter
+import lightgbm as lgb # OK!
+```
+
 ## SageMakerのOSとusernameとpermission
 JupyterNotebookなので、terminalが使えます。  
 
@@ -52,3 +62,5 @@ usernameは以下の通りでsudoする権限が与えられています
 sh-4.2$ whoami
 ec2-user
 ```
+
+
