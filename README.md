@@ -30,3 +30,8 @@ EC2インスタンス等を立てることなく、JupyterNotebookやTensorFlow�
   <img width="550px" src="https://user-images.githubusercontent.com/4949982/39578315-cc096ad6-4f1e-11e8-9574-2d5ec8bc7e82.png">
 </div>
 <div align="center"> 図3. フルサイズのJupyterが立ち上がります </div>
+
+<div align="center">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/39578380-f89462e0-4f1e-11e8-8e8f-aa163ec682c3.png">
+</div>
+<div align="center"> 図4. 対応しているカーネルはSpark各種と、mxnet, tensorflow, anaconda </div>
