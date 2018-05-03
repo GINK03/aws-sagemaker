@@ -9,9 +9,12 @@ AWS Sagemakerの使用例とできること、工夫すべき点を示します
 - SageMakerのOSとusernameとpermission
 
 - インスタンスのスケール調整
+
 - ディスクの制限をS3で回避する
 - ディスクの制限をEFSで回避する
+
   - セキュリティグループの扱い
+
 - Random Cut Forestの異常値検知アルゴリズム
   - アルゴリズム概要
   - 論文
@@ -65,4 +68,14 @@ sh-4.2$ whoami
 ec2-user
 ```
 
+## インスタンスのスケール調整
 
+<div align="center">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/39581668-11c47c7a-4f27-11e8-98d0-b88676e84169.png">
+</div>
+<div align="center"> 図5. インスタンスを停止して、編集をクリックします　</div>
+
+<div align="center">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/39581463-97b203b2-4f26-11e8-9bd1-a8f27ed62cdf.png">
+</div>
+<div align="center"> 図6. インスタンスのサイズを変更できます　</div>
