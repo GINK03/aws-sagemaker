@@ -185,5 +185,8 @@ rcf.set_hyperparameters(
     num_trees=50,
     feature_size=1)
 ```
+[一通り実行した内容のjupyter](https://github.com/GINK03/aws-sagemaker/blob/master/random-cut-forest-example.ipynb)があるので、必要に応じて参照してください  
+
+感想としては、これは、パラメータ調整次第で、prophetで扱えない高次元の入力となる系列情報も対応かのうそうで、問題によっては使う意義がありそうです。　　
 
 
