@@ -158,6 +158,10 @@ Random Cut Forestというあまり名前を聞かない異常検知アルゴリ
 <div align="center"> 図８. 決定木の複雑度を減らす操作 </div>  
 
 <div align="center">
-  <img width="300px" src="https://user-images.githubusercontent.com/4949982/39623267-0870b360-4fd0-11e8-845e-92ea79f67a3f.png">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/39623267-0870b360-4fd0-11e8-845e-92ea79f67a3f.png">
 </div>
 <div align="center"> 式1. 簡略化したモデルから複雑なモデルとの誤差をもとに評価を決定　</div>  
+
+お気持ちとしてはモデルの複雑度（この場合は決定木の深さ）が、しきい値を超えたら、何らかの異常値があるとみなす、という流れです。　　
+
+
