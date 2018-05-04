@@ -95,4 +95,15 @@ AWS SageMakerは5GByteの容量制限があるために、大規模なデータ�
 </div>
 <div align="center"> 図7. EFSのセキュリティグループをSageMakerのインタンスのものと同じにしておきます </div>
 
+SageMakerも一旦インスタンスを作成してしまうと、セキュリティグループ等を変更できないので、要注意です。
+
+Jupyterでshを有効にするか、terminalに入って、以下のコマンドでEFSをマウントできます。  
+```console
+$ cd SageMaker
+$ mkdir efs
+$ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2 ${MOUNT_TARGET_IP}:/ efs
+$ sudo chown -R uc2-user efs
+```
+複数のインスタンスでアクセスでき、後述するS3をマウントするアプローチよりだいぶ速度的にマシだったりして、選択としてありだと思います。
+
 
