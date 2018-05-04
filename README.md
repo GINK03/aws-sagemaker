@@ -16,8 +16,8 @@ AWS Sagemakerの使用例とできること、工夫すべき点を示します
 - ディスクの制限をS3で回避する
 
 - Random Cut Forestの異常値検知アルゴリズム
-  - アルゴリズム概要
   - 論文
+  - アルゴリズム概要
   - ユースケースを実行する
 
 ## AWS sagemakerとは
@@ -133,3 +133,15 @@ $ /bin/goofys-latest gk-sagemaker-test-01 s3
 ```
 これでs3で作業するには容量制限を受けませんが、遅いので、コスパ重視の設定になります
 
+## Random Cut Forestの異常値検知アルゴリズム
+
+AWS SageMakerの売りとしてAWSのハイパワー仮想化コンテナを利用することで、JupyterNotebookが動作しているコンテナでなくても、高速に学習・予想することが可能なようです。  
+
+Random Cut Forestというあまり名前を聞かない異常検知アルゴリズムです。　　　
+
+ノンパラメトリックの異常値検知アルゴリズムで使い勝手は良さそうです。  
+
+### 論文
+論文自体は2016年に発表されたもので比較的新しめです。　　
+
+[AWS whitepaperの中に紛れて公開されて](http://proceedings.mlr.press/v48/guha16.pdf)おり、誰でも参照できます。  
