@@ -166,4 +166,24 @@ Random Cut Forestというあまり名前を聞かない異常検知アルゴリ
 
 各系列で、様々に複雑度を見ていって、これをscoreとして、scoreの平均値と標準偏差の和などをしきい値として、しきい値が偏差を超えたら異常値と定義するなどで使えます。  
 
+### ユースケースを実行する
+ニューヨークの日々のタクシーの利用者数をtime seriesで格納されたデータを用いて、異常値検知を行っていますが、[2018/05/01に投稿されたはずなのポスト](https://aws.amazon.com/jp/blogs/news/use-the-built-in-amazon-sagemaker-random-cut-forest-algorithm-for-anomaly-detection/)ですが、動作しませんでした。  
+
+追試したところ、以下のようにコードを変更する必要がありました。  
+
+**変更前**
+```jupyter
+rcf.set_hyperparameters(
+    num_samples_per_tree=200,
+    num_trees=50,
+    feature_size=1)
+```
+**変更後**
+```jupyter
+rcf.set_hyperparameters(
+    num_samples_per_tree=200,
+    num_trees=50,
+    feature_size=1)
+```
+
 
