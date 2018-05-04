@@ -156,3 +156,8 @@ Random Cut Forestというあまり名前を聞かない異常検知アルゴリ
   <img width="300px" src="https://user-images.githubusercontent.com/4949982/39623263-033e1540-4fd0-11e8-911d-ebd1dccc6e0e.png">
 </div>
 <div align="center"> 図８. 決定木の複雑度を減らす操作 </div>  
+
+<div align="center">
+  <img width="300px" src="https://user-images.githubusercontent.com/4949982/39623267-0870b360-4fd0-11e8-845e-92ea79f67a3f.png">
+</div>
+<div align="center"> 式1. 簡略化したモデルから複雑なモデルとの誤差をもとに評価を決定　</div>  
