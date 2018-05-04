@@ -86,7 +86,7 @@ AWS SageMakerは5GByteの容量制限があるために、大規模なデータ�
 
 [オフィシャルサイトでもその手法は紹介されて](https://aws.amazon.com/jp/blogs/news/mount-an-efs-file-system-to-an-amazon-sagemaker-notebook-with-lifecycle-configurations/)いますが、EFSというネットワーク経由のディスクをマウントする際に気をつけるべき点があります。　
 
-- EFSとSageMakerのセキュリティグループは同じである
+- EFSとSageMakerのセキュリティグループは同じである  
 　
 これを気づかずに数時間とかしました。。。
 
