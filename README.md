@@ -109,3 +109,27 @@ $ sudo chown -R uc2-user efs
 ## ディスクの制限をS3で回避する
 S3でマウントするにはgoofysというgoでマウントする仕組みが便利です。  
 
+Linux用のバイナリがすでにコンパイルされて公開されているので、それを利用します。　　
+
+goofysのバイナリを設置して、credencialsを設定します
+```console
+$ cd SageMaker
+$ mkdir bin
+$ cd bin 
+$ wget http://bit.ly/goofys-latest
+$ chmod +x goofys-latest
+$ cat ~/.aws/credencials
+[default]
+aws_access_key_id = ${AKID1234567890}
+aws_secret_access_key = ${MY-SECRET-KEY}
+```
+必要なバイナリ、fusermountが含まれていないので、別途インストールします
+```console
+$ sudo yum install fuse
+```
+マウントします
+```console
+$ /bin/goofys-latest gk-sagemaker-test-01 s3
+```
+これでs3で作業するには容量制限を受けませんが、遅いので、コスパ重視の設定になります
+
