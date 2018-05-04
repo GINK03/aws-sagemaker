@@ -90,3 +90,9 @@ AWS SageMakerは5GByteの容量制限があるために、大規模なデータ�
 　
 これを気づかずに数時間とかしました。。。
 
+<div align="center">
+  <img width="450px" src="https://user-images.githubusercontent.com/4949982/39610067-c170d36a-4f88-11e8-8e99-8b705172732b.png">
+</div>
+<div align="center"> 図7. EFSのセキュリティグループをSageMakerのインタンスのものと同じにしておきます </div>
+
+
