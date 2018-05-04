@@ -151,3 +151,7 @@ Random Cut Forestというあまり名前を聞かない異常検知アルゴリ
 なんらかモデルが複雑になるという発想から来ているようです。  
 
 つまり、正常な状態より、異常な状態は予想が困難で複雑であるということから、その複雑度を見ていくことで異常度を定義しようという発想に見えました。  
+
+<div align="center">
+  <img width="300px" src="https://user-images.githubusercontent.com/4949982/39623263-033e1540-4fd0-11e8-911d-ebd1dccc6e0e.png">
+</div>
