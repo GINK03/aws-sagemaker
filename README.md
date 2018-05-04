@@ -10,10 +10,10 @@ AWS Sagemakerの使用例とできること、工夫すべき点を示します
 
 - インスタンスのスケール調整
 
-- ディスクの制限をS3で回避する
 - ディスクの制限をEFSで回避する
-
   - セキュリティグループの扱い
+
+- ディスクの制限をS3で回避する
 
 - Random Cut Forestの異常値検知アルゴリズム
   - アルゴリズム概要
@@ -79,3 +79,14 @@ ec2-user
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/39581463-97b203b2-4f26-11e8-9bd1-a8f27ed62cdf.png">
 </div>
 <div align="center"> 図6. インスタンスのサイズを変更できます　</div>
+
+## ディスクの制限をEFSで回避する
+
+AWS SageMakerは5GByteの容量制限があるために、大規模なデータを扱う際には外部ディスクとの接続が必要になります。  
+
+[オフィシャルサイトでもその手法は紹介されて](https://aws.amazon.com/jp/blogs/news/mount-an-efs-file-system-to-an-amazon-sagemaker-notebook-with-lifecycle-configurations/)いますが、EFSというネットワーク経由のディスクをマウントする際に気をつけるべき点があります。　
+
+- EFSとSageMakerのセキュリティグループは同じである
+　
+これを気づかずに数時間とかしました。。。
+
