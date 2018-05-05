@@ -20,7 +20,10 @@ AWS Sagemakerの使用例とできること、工夫すべき点を示します
 - Random Cut Forestの異常値検知アルゴリズム
   - 論文
   - アルゴリズム概要
-  - ユースケースを実行する
+  - タクシーの乗車数の異常検知
+
+- 想定されるユースケース
+
 
 ## AWS sagemakerとは
 EC2インスタンス等を立てることなく、JupyterNotebookやTensorFlowやSpark等を扱うことができます。  
@@ -173,8 +176,8 @@ Random Cut Forestというあまり名前を聞かない異常検知アルゴリ
 
 各系列で、様々に複雑度を見ていって、これをscoreとして、scoreの平均値と標準偏差の和などをしきい値として、しきい値が偏差を超えたら異常値と定義するなどで使えます。  
 
-### ユースケースを実行する
-ニューヨークの日々のタクシーの利用者数をtime seriesで格納されたデータを用いて、異常値検知を行っていますが、[2018/05/01に投稿されたはずなのポスト](https://aws.amazon.com/jp/blogs/news/use-the-built-in-amazon-sagemaker-random-cut-forest-algorithm-for-anomaly-detection/)ですが、動作しませんでした。  
+### タクシーの乗車数の異常検知
+ニューヨークの日々のタクシーの利用者数をtime seriesで格納されたデータを用いて、異常値検知を行っていますが、[2018/05/01に投稿されたはずなのポスト](https://aws.amazon.com/jp/blogs/news/use-the-built-in-amazon-sagemaker-random-cut-forest-algorithm-for-anomaly-detection/)ですが、動作しませんでした。  
 
 追試したところ、以下のようにコードを変更する必要がありました。  
 
