@@ -1,4 +1,5 @@
-# aws-sagemaker
+# AWS SagemakerでJupyterを使ったり、独自機能を使う  
+
 AWS SagemakerでのJupyterの使用例と、工夫すべき点を示します  
 
 また、JupyterのPythonに内蔵されているsagemakerで他のコンテナサービスと連携してユニークな機能であるRandom Cut Forestによる異常検知の使用例を示します。  
