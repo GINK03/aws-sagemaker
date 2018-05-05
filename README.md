@@ -138,6 +138,8 @@ $ /bin/goofys-latest gk-sagemaker-test-01 s3
 ```
 これでs3で作業するには容量制限を受けませんが、遅いので、コスパ重視の設定になります
 
+[go言語からコンパイルしてインストールする場合はこちら](https://gink03.github.io/goofys/)
+
 ## Random Cut Forestの異常値検知アルゴリズム
 
 AWS SageMakerの売りとしてAWSのハイパワー仮想化コンテナを利用することで、JupyterNotebookが動作しているコンテナでなくても、高速に学習・予想することが可能なようです。  
